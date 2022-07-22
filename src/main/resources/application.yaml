@@ -1,0 +1,17 @@
+spring:
+  datasource:
+      url: jdbc:postgresql://localhost:5432/dvdrental
+      password: dvdrental
+      username: dvdrental
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL81Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+logging:
+  level:
+    root: DEBUG
+    org:
+      springframework:
+        security: DEBUG
